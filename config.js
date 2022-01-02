@@ -15,7 +15,7 @@ const config = convict({
   magentoGraphQl: {
     doc: 'The Magento GraphQL API URL',
     format: 'url',
-    default: process.env.MAGENTO_GRAPHQL || 'https://magento2.devgfnl.com/graphql',
+    default: process.env.MAGENTO_GRAPHQL || 'http://localhost:8080/graphql',
     env: 'MAGENTO_GRAPHQL',
   },
   enableMagentoExternalCheckout: {
